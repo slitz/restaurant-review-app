@@ -38,6 +38,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+	width: 100%;
 }
 #footer {
   background-color: #444;
@@ -266,7 +267,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -280,4 +281,39 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+@media screen and (max-width: 450px){
+  nav h1 a {
+    font-size: 12px;
+  }
+	.filter-options {
+		height: 125px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.filter-options select {
+		padding: 0 0px;
+	}
+	#restaurants-list .restaurant-img {
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		min-height: 100px;
+		max-width: 75%;
+		min-width: 75%;
+	}
+	#restaurants-list li {
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		min-height: 250px;
+	}
+	#map-container {
+		width: 100%;
+	}
+	#restaurant-container, #reviews-container {
+	  width: 100%;
+	}
 }
