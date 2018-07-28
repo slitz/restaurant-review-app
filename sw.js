@@ -22,7 +22,7 @@ self.addEventListener('activate', function(event){
             return cacheName.startsWith('restaurant-reviews') &&
               cacheName != staticCacheName;
           }).map(function(cacheName){
-            return cache.delete(cacheName);
+            return caches.delete(cacheName);
           })
         );
       })
