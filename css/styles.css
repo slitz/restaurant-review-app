@@ -10,7 +10,8 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+	position: relative;
+	width: 100%;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -183,10 +184,11 @@ nav h1 a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-size: 10pt;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
+	justify-content: center;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -285,6 +287,12 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+.reviewer-name {
+	font-size: 14pt;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
 @media screen and (max-width: 350px){
   nav h1 a {
     font-size: 11pt;
@@ -350,6 +358,9 @@ nav h1 a {
 	}
 }
 @media screen and (min-width: 451px) and (max-width: 1024px){
+	nav h1 a {
+		font-size: 26pt;
+	}
 	#restaurants-list .restaurant-img {
 		max-width: 90%;
 	  min-width: 90%;
@@ -361,12 +372,56 @@ nav h1 a {
 		align-items: center;
 		text-align: center;
 	}
-}
-@media screen and (min-width: 451px){
-	#restaurants-list li a {
-		display: flex;
+	#breadcrumb{
+		width: 100%;
+	}
+	.inside #map-container {
+		width: 100%;
+		height: 500px;
+		top: 150px;
+		position: relative;
+	}
+	#maincontent {
+	  display: flex;
+	  flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
-		text-align: center;
+		height: 100%;
+		width: 110%;
+	}
+	#restaurant-container {
+	  width: 75%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 180px;
+	}
+	#reviews-container {
+		width: 75%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 100px;
+	}
+	#restaurant-img {
+		width: inherit;
+	}
+	#restaurant-name {
+		font-size: 32pt;
+	}
+	ul,li, #restaurant-cuisine, p {
+		font-size: 22pt;
+	}
+	#restaurant-address, #restaurant-hours, .review-comments {
+	  font-size: 18pt;
+	  margin: 10px 0px;
+	}
+	#reviews-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.inside #footer {
+		width: 1024px;
+		font-size: 14pt;
 	}
 }
