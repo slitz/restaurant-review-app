@@ -285,7 +285,7 @@ nav h1 a {
   width: 85%;
 }
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 0 10px 10px;
 }
 #restaurant-hours td {
   color: #666;
@@ -327,13 +327,58 @@ nav h1 a {
 		text-align: center;
 		min-height: 250px;
 	}
+	#reviews-list li p {
+		margin: 0 30px 10px;
+	}
 	#restaurants-list li h1{
 		font-size: 12pt;
+	}
+	#restaurant-container, #reviews-container {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	#breadcrumb{
+		width: 100%;
+	}
+	ul,li, #restaurant-cuisine, p {
+		font-size: 16pt;
+	}
+	.inside #maincontent {
+	  display: flex;
+	  flex-wrap: wrap;
+		justify-content: center;
+		height: 100%;
+		width: 110%;
+	}
+	#restaurant-name {
+		font-size: 26pt;
+		text-align: center;
+		padding-top: 35px;
+	}
+	.inside #restaurant-img {
+		width: 100%;
+	}
+	.inside #map-container {
+		width: 100%;
+		height: 500px;
+		top: 150px;
+		position: relative;
+	}
+	.inside #restaurant-address, #restaurant-hours, tr, td{
+	  font-size: 16pt;
+	}
+	.review-comments{
+		font-size: 16pt;
+		text-align: justify;
 	}
 }
 @media screen and (min-width: 351px) and (max-width: 450px){
   nav h1 a {
-    font-size: 12px;
+    font-size: 16px;
   }
 	.filter-options {
 		height: 125px;
@@ -358,6 +403,9 @@ nav h1 a {
 		text-align: center;
 		min-height: 250px;
 	}
+	#reviews-list li p {
+	  margin: 0 30px 10px;
+	}
 	#map-container {
 		width: 100%;
 	}
@@ -369,11 +417,39 @@ nav h1 a {
 		align-items: center;
 		text-align: center;
 	}
+	#breadcrumb{
+		width: 100%;
+	}
+	ul,li, #restaurant-cuisine, p {
+		font-size: 18pt;
+	}
+	.inside #maincontent {
+	  display: flex;
+	  flex-wrap: wrap;
+		justify-content: center;
+		height: 100%;
+		width: 110%;
+	}
+	#restaurant-name {
+		font-size: 26pt;
+		text-align: center;
+		padding-top: 35px;
+	}
 	.inside #restaurant-img {
 		width: 100%;
 	}
-	.inside #maincontent {
-		width: 110%;
+	.inside #map-container {
+		width: 100%;
+		height: 500px;
+		top: 150px;
+		position: relative;
+	}
+	.inside #restaurant-address, #restaurant-hours, tr, td{
+	  font-size: 16pt;
+	}
+	.review-comments{
+		font-size: 18pt;
+		text-align: justify;
 	}
 }
 @media screen and (min-width: 451px) and (max-width: 1024px){
@@ -427,14 +503,18 @@ nav h1 a {
 	ul,li, #restaurant-cuisine, p {
 		font-size: 22pt;
 	}
-	.inside #restaurant-address, #restaurant-hours, .review-comments, tr, td{
-	  font-size: 22pt;
+	.inside #restaurant-address, #restaurant-hours, tr, td{
+	  font-size: 18pt;
 	  margin: 10px 0px;
 	}
 	#reviews-list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	.review-comments{
+		font-size: 18pt;
+		text-align: justify;
 	}
 	.inside #footer {
 		width: 105%;
