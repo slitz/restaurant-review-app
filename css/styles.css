@@ -290,10 +290,23 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-.reviewer-name, .review-date, .review-rating {
+.day{
+	text-align: left;
+}
+.time{
+	text-align: right;
+}
+.reviewer-name, .review-date {
 	font-weight: bold;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+.review-rating {
+	font-weight: bold;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	min-width: 100%;
+	text-align: left;
 }
 @media screen and (max-width: 350px){
 	nav h1 {
@@ -301,7 +314,7 @@ nav h1 a {
 		text-align: center;
 	}
 	nav h1 a {
-    font-size: 11pt;
+    font-size: 9pt;
 		text-align: center;
   }
 	.filter-options {
@@ -328,7 +341,7 @@ nav h1 a {
 		min-height: 250px;
 	}
 	#reviews-list li p {
-		margin: 0 30px 10px;
+		margin: 0 10px 10px;
 	}
 	#restaurants-list li h1{
 		font-size: 12pt;
@@ -344,7 +357,10 @@ nav h1 a {
 	#breadcrumb{
 		width: 100%;
 	}
-	ul,li, #restaurant-cuisine, p {
+	ul,li {
+		font-size: 14pt;
+	}
+	#restaurant-cuisine, p {
 		font-size: 16pt;
 	}
 	.inside #maincontent {
@@ -369,7 +385,18 @@ nav h1 a {
 		position: relative;
 	}
 	.inside #restaurant-address, #restaurant-hours, tr, td{
-	  font-size: 16pt;
+	  font-size: 14pt;
+	}
+	.review-rating {
+		font-weight: bold;
+		padding-top: 1em;
+		padding-bottom: 0em;
+		min-width: 100%;
+	}
+	.reviewer-name, .review-date {
+		font-weight: bold;
+		padding-top: 1em;
+		padding-bottom: 0em;
 	}
 	.review-comments{
 		font-size: 16pt;
@@ -404,7 +431,7 @@ nav h1 a {
 		min-height: 250px;
 	}
 	#reviews-list li p {
-	  margin: 0 30px 10px;
+	  margin: 0 10px 10px;
 	}
 	#map-container {
 		width: 100%;
